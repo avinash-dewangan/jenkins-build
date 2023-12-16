@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  jenkins:
+    image: jenkins/jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+#  spring-boot-app:
+#    image: springboot2
+#    ports:
+#      - "8585:8585"
+
+volumes:
+  jenkins_home:
